@@ -1,0 +1,24 @@
+.teaser-lg {
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+  padding: 8px;
+  border-radius: 5px;
+
+  .category-read-time {
+    width: 100%;
+    margin-bottom: 0.5rem;
+
+    div {
+      display: inline-block;
+    }
+
+    .category {
+      flaot: left;
+    }
+
+    .read-time {
+      float: right;
+      text-align: right;
+    }
+  }
+}
