@@ -1,16 +1,16 @@
 import React from 'react';
 // @ts-ignore
 import { useTracker } from 'meteor/react-meteor-data';
-import { BlogPostsCollection } from "/imports/api/BlogPostsCollection";
+import { ContentCollection } from "/imports/api/ContentCollection";
 import { TeaserLarge } from './TeaserLarge';
 
 export const LatestPosts = () => {
-    const posts : Array<object> = useTracker(() => BlogPostsCollection.find({}).fetch());
+    const publishedContent = useTracker(() => ContentCollection.find({status: 'Published'}).fetch());
     return (
         <div className="latest-posts">
             <h2 className="latest-header">Latest</h2>
             <div>
-                { posts.map(post => <TeaserLarge key={ post._id } post={ post }/>) }
+                { publishedContent.map(content => <TeaserLarge key={ content._id } content={ content } />) }
             </div>
         </div>
     );

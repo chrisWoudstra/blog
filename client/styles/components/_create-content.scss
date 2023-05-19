@@ -1,0 +1,57 @@
+.create-content {
+  width: 40%;
+  margin: auto;
+
+  .create-content-form {
+
+    input {
+      padding-left: 8px;
+    }
+
+    textarea {
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+
+    .type {
+      height: 25px;
+      width: 30%;
+    }
+
+    .title {
+      height: 35px;
+      font-size: 14px;
+    }
+
+    .title, .teaser-text, .body {
+      width: 100%;
+    }
+
+    .type, .title, .teaser-text, .body {
+      margin-bottom: 0.75rem;
+      border-radius: 7px;
+      border: 1px solid #555555;
+    }
+
+    .submit-btn-container {
+      height: 35px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      .submit {
+        width: 20%;
+        height: 35px;
+        cursor: pointer;
+        border-radius: 6px;
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        margin: auto;
+        position: relative;
+      }
+    }
+  }
+}

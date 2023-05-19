@@ -4,7 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Meteor } from 'meteor/meteor';
 import { App } from '/imports/ui/App';
 import { Post } from '/imports/ui/Post';
-import { AddPost } from "/imports/ui/AddPost";
+import { Content } from '/imports/ui/Content';
+import { AddContent } from "/imports/ui/AddContent";
 
 const router = createBrowserRouter([
   {
@@ -16,8 +17,12 @@ const router = createBrowserRouter([
     element: <Post/>
   },
   {
-    path: "/add-post",
-    element: <AddPost/>
+    path: '/admin/content',
+    element: <Content/>
+  },
+  {
+    path: "/admin/content/add",
+    element: <AddContent/>
   }
 ]);
 

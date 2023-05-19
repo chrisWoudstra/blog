@@ -1,22 +1,22 @@
 import React from 'react';
 
-export const TeaserLarge = ({post}) => {
+export const TeaserLarge = ({ content }) => {
 
     const dateOptions = {
         month: 'short',
         day: 'numeric'
     }
 
-    const publishedDate = (new Date(post.createdAt)).toLocaleDateString("en-US", dateOptions);
+    const publishedDate = (new Date(content.createdAt)).toLocaleDateString("en-US", dateOptions);
     return (
         <div className="teaser-lg">
             <div className="category-read-time">
-                <div className="category">Category</div>
-                <div className="read-time">4 min read</div>
+                <div className="category">{ content.type }</div>
+                <div className="read-time">{ !content.readTime } min read</div>
             </div>
-            <div>{ post.title }</div>
-            <div>{publishedDate}</div>
-            <div>{ post.teaserText}</div>
+            <div>{ content.title }</div>
+            <div>{ publishedDate }</div>
+            <div>{ content.teaserText }</div>
         </div>
     );
 }
