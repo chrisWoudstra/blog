@@ -9,6 +9,7 @@ export interface Content {
     status: string;
     readTime: number;
     createdAt: Date;
+    publishedAt: Date;
 }
 
 export const ContentCollection = new Mongo.Collection('content');

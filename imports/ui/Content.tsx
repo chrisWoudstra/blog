@@ -9,15 +9,19 @@ export const Content = () => {
     return (
         <div className="content">
             <h2 className="content-header">Content</h2>
-            <table>
+            <table id="content-table">
                 <thead>
                 <tr>
+                    <td></td>
+                    <td>Type</td>
                     <td>Title</td>
-                    <td>Created Date</td>
+                    <td>Created</td>
+                    <td>Published</td>
+                    <td></td>
                 </tr>
                 </thead>
                 <tbody>
-                { contentArray.map(content => <ContentItem key={ content._id } content={ content }/>) }
+                { contentArray.map((content, index) => <ContentItem key={ content._id } index={index} content={ content }/>) }
                 </tbody>
             </table>
         </div>
