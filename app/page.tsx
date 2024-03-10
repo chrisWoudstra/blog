@@ -20,7 +20,7 @@ export default async function Home() {
         </select>
       </div>
       {posts.map((post: Post) => (
-          <div className="w-2/5 rounded overflow-hidden shadow-lg mb-10">
+          <div key={post.id} className="w-2/5 rounded overflow-hidden shadow-lg mb-10">
             <img className="w-full" src={`${process.env.S3_ASSET_URL}/teaser_images/${post.teaser_image}`} alt={post.title} />
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{post.title}</div>
