@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
 
