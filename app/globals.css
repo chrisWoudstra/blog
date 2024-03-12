@@ -21,3 +21,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.big-class {
+  height: 500px;
+  color: black;
+}
