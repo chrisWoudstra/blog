@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mystical Forest Cat",
-  description: "Reflections on a Kundalini Awakening",
+  description: "Random thoughts and reflections from a mystical forest cat.",
 };
 
 export default function RootLayout({
